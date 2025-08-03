@@ -1,0 +1,206 @@
+.facilities {
+  margin-top: 80px;
+}
+
+/* Facilities Hero */
+.facilities-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.facilities-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.facilities-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Common Section Styles */
+.accommodation-section,
+.medical-section,
+.dining-section,
+.recreation-section,
+.outdoor-section,
+.services-section {
+  padding: 5rem 0;
+}
+
+.accommodation-section,
+.recreation-section,
+.services-section {
+  background: #f8f9fa;
+}
+
+.medical-section,
+.dining-section,
+.outdoor-section {
+  background: white;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+}
+
+/* Facilities Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.facility-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+}
+
+.facility-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.facility-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.facility-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.facility-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facility-card li {
+  color: #7f8c8d;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecf0f1;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.facility-card li:last-child {
+  border-bottom: none;
+}
+
+.facility-card li::before {
+  content: '✓';
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-item p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facilities-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .facilities-hero p {
+    font-size: 1rem;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .facility-card,
+  .service-item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .facilities-hero h1 {
+    font-size: 2rem;
+  }
+
+  .facilities-hero p {
+    font-size: 0.9rem;
+  }
+
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facility-card,
+  .service-item {
+    padding: 1rem;
+  }
+
+  .facility-icon,
+  .service-icon {
+    font-size: 2.5rem;
+  }
+} 
